@@ -20,5 +20,5 @@ EMAIL;CHARSET=UTF-8;type=WORK:ps@adictgroup.ru
 TEL;TYPE=VOICE:89501284824
 END:VCARD`;
 
-const blobContact = new Blob([vcfTemplate], {type: 'text/x-vcard'});
+const blobContact = new Blob([vcfTemplate], {type: 'text/x-vcard;charset=utf8'});
 download.href = URL.createObjectURL(blobContact)
