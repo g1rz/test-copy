@@ -8,7 +8,8 @@
 //     elParent.appendChild(copy)
 // })
 
-const download = document.querySelector('#download')
+const download = document.querySelector('#download');
+const downloadText = document.querySelector('#downloadText');
 
 const vcfTemplate = `
 BEGIN:VCARD
@@ -23,3 +24,8 @@ END:VCARD`;
 const blobContact = new Blob([vcfTemplate], {type: 'text/x-vcard'});
 download.href = URL.createObjectURL(blobContact);
 download.download = 'vcard.vcf';
+
+const textTemplate = `текстовый документ - test`;
+
+const blobText = new Blob([textTemplate], {type: 'text/plain'});
+downloadText.href = URL.createObjectURL(blobText);
