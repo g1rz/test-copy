@@ -15,10 +15,10 @@ BEGIN:VCARD
 VERSION:3.0
 ORG:Адикт
 TITLE:Программист
-FN;CHARSET=UTF-8:Пешков Сергей НиколавечиTEST
+FN:Пешков Сергей НиколавечиTEST
 EMAIL;CHARSET=UTF-8;type=WORK:ps@adictgroup.ru
 TEL;TYPE=VOICE:89501284824
 END:VCARD`;
 
-const blobContact = new Blob([vcfTemplate], {type: 'text/x-vcard;charset=utf8'});
+const blobContact = new Blob([vcfTemplate], {type: 'text/x-vcard'});
 download.href = URL.createObjectURL(blobContact)
