@@ -1,12 +1,12 @@
-const elPure = document.querySelector('#pure');
-const elParent = document.querySelector('#parent');
-const elCopy = document.querySelector('#copy-btn');
+// const elPure = document.querySelector('#pure');
+// const elParent = document.querySelector('#parent');
+// const elCopy = document.querySelector('#copy-btn');
 
-const copy = elPure.cloneNode(true);
+// const copy = elPure.cloneNode(true);
 
-elCopy.addEventListener('click', () => {
-    elParent.appendChild(copy)
-})
+// elCopy.addEventListener('click', () => {
+//     elParent.appendChild(copy)
+// })
 
 const download = document.querySelector('#download')
 
