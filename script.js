@@ -21,11 +21,11 @@ EMAIL;CHARSET=UTF-8;type=WORK:ps@adictgroup.ru
 TEL;TYPE=VOICE:89501284824
 END:VCARD`;
 
-const blobContact = new Blob([vcfTemplate], {type: 'text/x-vcard'});
+const blobContact = new Blob([vcfTemplate], {type: 'text/x-vcard;charset=UTF-8'});
 download.href = URL.createObjectURL(blobContact);
 download.download = 'vcard.vcf';
 
 const textTemplate = `текстовый документ - test`;
 
-const blobText = new Blob([textTemplate], {type: 'text/plain'});
+const blobText = new Blob([textTemplate], {type: 'text/plain;charset=UTF-8'});
 downloadText.href = URL.createObjectURL(blobText);
