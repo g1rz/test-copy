@@ -12,7 +12,7 @@ const download = document.querySelector('#download')
 
 const vcfTemplate = `
 BEGIN:VCARD
-VERSION:3.0
+VERSION:2.1
 ORG:Адикт
 TITLE:Программист
 FN:Пешков Сергей НиколавечиTEST
