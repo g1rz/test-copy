@@ -21,4 +21,5 @@ TEL;TYPE=VOICE:89501284824
 END:VCARD`;
 
 const blobContact = new Blob([vcfTemplate], {type: 'text/x-vcard'});
-download.href = URL.createObjectURL(blobContact)
+download.href = URL.createObjectURL(blobContact);
+download.download = 'vcard.vcf';
