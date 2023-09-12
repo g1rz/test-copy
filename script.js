@@ -14,10 +14,10 @@ const downloadText = document.querySelector('#downloadText');
 const vcfTemplate = `
 BEGIN:VCARD
 VERSION:2.1
-ORG:Адикт
-TITLE:Программист
-FN:Пешков Сергей НиколавечиTEST
-EMAIL;CHARSET=UTF-8;type=WORK:ps@adictgroup.ru
+ORG;CHARSET=UTF-8:Адикт
+TITLE;CHARSET=UTF-8:Программист
+FN;CHARSET=UTF-8:Пешков Сергей НиколавечиTEST
+EMAIL;type=WORK:ps@adictgroup.ru
 TEL;TYPE=VOICE:89501284824
 END:VCARD`;
 
