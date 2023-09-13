@@ -11,8 +11,7 @@
 const download = document.querySelector('#download');
 const downloadText = document.querySelector('#downloadText');
 
-const vcfTemplate = `
-BEGIN:VCARD
+const vcfTemplate = `BEGIN:VCARD
 VERSION:2.1
 ORG;CHARSET=UTF-8:Адикт
 TITLE;CHARSET=UTF-8:Программист
