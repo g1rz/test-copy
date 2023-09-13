@@ -20,11 +20,11 @@ EMAIL;type=WORK:ps@adictgroup.ru
 TEL;TYPE=VOICE:89501284824
 END:VCARD`;
 
-const blobContact = new Blob(["\ufeff", vcfTemplate], {type: 'text/x-vcard;charset=UTF-8'});
+const blobContact = new Blob([vcfTemplate], {type: 'text/x-vcard;charset=UTF-8'});
 download.href = URL.createObjectURL(blobContact);
-download.download = 'vcard.vcf';
+download.download = 'vcard-new.vcf';
 
 const textTemplate = `текстовый документ - test`;
 
-const blobText = new Blob(["\ufeff", textTemplate], {type: 'text/plain;charset=UTF-8'});
+const blobText = new Blob([textTemplate], {type: 'text/plain;charset=UTF-8'});
 downloadText.href = URL.createObjectURL(blobText);
